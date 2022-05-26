@@ -8,13 +8,6 @@ jobs:
       - echo $JAVA_HOME
       - echo $PATH
    - dist: xenial
-     jdk: openjdk9
-     arch: amd64
-     script:
-      - java -version
-      - echo $JAVA_HOME
-      - echo $PATH
-   - dist: xenial
      jdk: openjdk10
      arch: amd64
      script:
@@ -43,13 +36,6 @@ jobs:
       - echo $JAVA_HOME
       - echo $PATH
    - dist: bionic
-     jdk: openjdk9
-     arch: amd64
-     script:
-      - java -version
-      - echo $JAVA_HOME
-      - echo $PATH
-   - dist: bionic
      jdk: openjdk10
      arch: amd64
      script:
@@ -72,13 +58,6 @@ jobs:
       - echo $PATH
    - dist: focal
      jdk: openjdk8
-     arch: amd64
-     script:
-      - java -version
-      - echo $JAVA_HOME
-      - echo $PATH
-   - dist: focal
-     jdk: openjdk9
      arch: amd64
      script:
       - java -version
