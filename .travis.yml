@@ -1,0 +1,12 @@
+dist: 
+  - xenial
+  - bionic
+  - focal
+jdk: openjdk8
+arch: amd64
+script:
+ - java -version
+ - echo $JAVA_HOME
+ - echo $PATH
+notifications:
+  email: false
