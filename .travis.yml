@@ -1,12 +1,16 @@
-dist: 
-  - xenial
-  - bionic
-  - focal
-jdk: openjdk8
-arch: amd64
-script:
- - java -version
- - echo $JAVA_HOME
- - echo $PATH
-notifications:
-  email: false
+jobs:
+  include:
+   - dist: xenial
+   - dist: bionic
+   - dist: focal
+  jdk: 
+    - openjdk8
+    - openjdk11
+    - openjdk17
+  arch: amd64
+  script:
+   - java -version
+   - echo $JAVA_HOME
+   - echo $PATH
+  notifications:
+    email: false
