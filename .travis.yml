@@ -1,16 +1,66 @@
 jobs:
   include:
    - dist: xenial
+     jdk: openjdk8
+     arch: amd64
+     script:
+      - java -version
+      - echo $JAVA_HOME
+      - echo $PATH
+   - dist: xenial
+     jdk: openjdk11
+     arch: amd64
+     script:
+      - java -version
+      - echo $JAVA_HOME
+      - echo $PATH
+   - dist: xenial
+     jdk: openjdk17
+     arch: amd64
+     script:
+      - java -version
+      - echo $JAVA_HOME
+      - echo $PATH
    - dist: bionic
+     jdk: openjdk8
+     arch: amd64
+     script:
+      - java -version
+      - echo $JAVA_HOME
+      - echo $PATH
+   - dist: bionic
+     jdk: openjdk11
+     arch: amd64
+     script:
+      - java -version
+      - echo $JAVA_HOME
+      - echo $PATH
+   - dist: bionic
+     jdk: openjdk17
+     arch: amd64
+     script:
+      - java -version
+      - echo $JAVA_HOME
+      - echo $PATH
    - dist: focal
-  jdk: 
-    - openjdk8
-    - openjdk11
-    - openjdk17
-  arch: amd64
-  script:
-   - java -version
-   - echo $JAVA_HOME
-   - echo $PATH
-  notifications:
-    email: false
+     jdk: openjdk8
+     arch: amd64
+     script:
+      - java -version
+      - echo $JAVA_HOME
+      - echo $PATH
+   - dist: focal
+     jdk: openjdk11
+     arch: amd64
+     script:
+      - java -version
+      - echo $JAVA_HOME
+      - echo $PATH
+   - dist: focal
+     jdk: openjdk17
+     arch: amd64
+     script:
+      - java -version
+      - echo $JAVA_HOME
+      - echo $PATH
+
