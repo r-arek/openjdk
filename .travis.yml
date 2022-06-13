@@ -15,7 +15,6 @@ jobs:
 #       - echo $JAVA_HOME
 #       - echo $PATH
    - dist: focal
-     jdk: openjdk15
      arch: s390x
      script:
       - java -version
