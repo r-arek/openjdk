@@ -1,23 +1,4 @@
-jobs:
-  include:
-#    - dist: xenial
-#      jdk: openjdk15
-#      arch: amd64
-#      script:
-#       - java -version
-#       - echo $JAVA_HOME
-#       - echo $PATH
-#    - dist: bionic
-#      jdk: openjdk15
-#      arch: amd64
-#      script:
-#       - java -version
-#       - echo $JAVA_HOME
-#       - echo $PATH
-   - dist: focal
-     arch: s390x
-     script:
-      - java -version
-      - echo $JAVA_HOME
-      - echo $PATH
-
+dist: jammy
+virt: lxd
+script:
+  - echo "test"
