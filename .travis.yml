@@ -1,5 +1,4 @@
 dist: jammy
-virt: lxd
 cache:
   directories:
     - $HOME
