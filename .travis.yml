@@ -1,4 +1,8 @@
 dist: jammy
 virt: lxd
+cache:
+  directories:
+    - $HOME
 script:
-  - echo "test"
+  - echo "test" >>$HOME/test.txt
+  
