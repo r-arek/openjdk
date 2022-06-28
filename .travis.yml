@@ -9,3 +9,4 @@ jobs:
   include:
     - dist: jammy
     - dist: focal
+    - dist: xenial
