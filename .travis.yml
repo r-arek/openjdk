@@ -1,12 +1,9 @@
 os: linux
-language: python
-python: pypy
-script: python -V
 
-install: true
+script:
+  - date > /home/travis/date 
+  
+cache:
+  directories:
+   - /home/travis/date
 
-jobs:
-  include:
-    - dist: jammy
-    - dist: focal
-    - dist: xenial
