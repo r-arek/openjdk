@@ -5,5 +5,5 @@ script:
   
 cache:
   directories:
-   - /home/travis/date
+   - /home/travis/date.txt
 
