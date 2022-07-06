@@ -1,9 +1,5 @@
 os: linux
-
+arch: s390x
 script:
-  - date > /home/travis/date 
-  
-cache:
-  directories:
-   - /home/travis/date.txt
-
+  - date
+ 
