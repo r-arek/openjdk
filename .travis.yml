@@ -1,3 +1,3 @@
-arch: amd64
+arch: ppc64le
 script: 
   - cat /etc/hosts
