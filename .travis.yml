@@ -1,4 +1,5 @@
 arch: ppc64le
+dist: focal
 script: 
   - cat /etc/hosts
   - cat /etc/hostname
