@@ -1,3 +1,4 @@
-arch: s390x
+arch: ppc64le
 script: 
   - cat /etc/hosts
+  - cat /etc/hostname
