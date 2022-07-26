@@ -1,5 +1,8 @@
 arch: ppc64le
-dist: focal
+dist: 
+  - xenial
+  - bionic
+  - focal
 script: 
   - cat /etc/hosts
   - cat /etc/hostname
