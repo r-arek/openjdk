@@ -1,16 +1,17 @@
-dist: xenial
-group: edge
 jobs:
   include:
-    - arch: arm64
-    - arch: ppc64le      
-    - arch: s390x
-    
-      
-language: shell
-
-script:
-  - uname -a
-  - cat /etc/cloud/cloud.cfg
-  - ls -lah /etc/cloud/
-  - ls -lah /etc/cloud/cloud.cfg.d
+   - dist: focal
+     arch: ppc64le
+     script:
+      - pip install cargo
+      - ant -version
+   - dist: bionic
+     arch: ppc64le
+     script:
+      - pip install cargo
+      - ant -version
+   - dist: xenial
+     arch: ppc64le
+     script:
+      - pip install cargo
+      - ant -version
