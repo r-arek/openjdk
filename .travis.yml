@@ -1,9 +1,6 @@
 arch: ppc64le
-jobs:
-  include:
-   - dist: xenial
-   - dist: bionic
-   - dist: focal
+dist: xenial
+group: edge
 script: 
   - cat /etc/hosts
   - cat /etc/hostname
