@@ -1,5 +1,5 @@
 dist: xenial
-
+group: edge
 jobs:
   include:
     - arch: arm64
