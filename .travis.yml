@@ -1,6 +1,16 @@
-arch: ppc64le
 dist: xenial
-group: edge
-script: 
-  - cat /etc/hosts
-  - cat /etc/hostname
+
+jobs:
+  include:
+    - arch: arm64
+    - arch: ppc64le      
+    - arch: s390x
+    
+      
+language: shell
+
+script:
+  - uname -a
+  - cat /etc/cloud/cloud.cfg
+  - ls -lah /etc/cloud/
+  - ls -lah /etc/cloud/cloud.cfg.d
