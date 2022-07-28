@@ -3,42 +3,42 @@ jobs:
    - dist: focal
      group: edge
      arch: ppc64le
-     lang: python
+     language: python
      python: '3.7'
      script:
       - pip install cargo
    - dist: bionic
      group: edge
      arch: ppc64le
-     lang: python
+     language: python
      python: '3.7'
      script:
       - pip install cargo
    - dist: xenial
      arch: ppc64le
      group: edge
-     lang: python
+     language: python
      python: '3.7'
      script:
       - pip install cargo
    - dist: focal
      group: edge
      arch: s390x
-     lang: python
+     language: python
      python: '3.7'
      script:
       - pip install cargo
    - dist: bionic
      group: edge
      arch: s390x
-     lang: python
+     language: python
      python: '3.7'
      script:
       - pip install cargo
    - dist: xenial
      arch: s390x
      group: edge
-     lang: python
+     language: python
      python: '3.7'
      script:
       - pip install cargo
