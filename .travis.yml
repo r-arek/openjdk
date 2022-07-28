@@ -14,7 +14,6 @@ jobs:
      python: '3.7'
      script:
       - pip install cargo
-      - ant -version
    - dist: xenial
      arch: ppc64le
      group: edge
@@ -22,7 +21,6 @@ jobs:
      python: '3.7'
      script:
       - pip install cargo
-      - ant -version
    - dist: focal
      group: edge
      arch: s390x
@@ -30,7 +28,6 @@ jobs:
      python: '3.7'
      script:
       - pip install cargo
-      - ant -version
    - dist: bionic
      group: edge
      arch: s390x
@@ -38,7 +35,6 @@ jobs:
      python: '3.7'
      script:
       - pip install cargo
-      - ant -version
    - dist: xenial
      arch: s390x
      group: edge
@@ -46,6 +42,5 @@ jobs:
      python: '3.7'
      script:
       - pip install cargo
-      - ant -version
 
 
