@@ -1,16 +1,3 @@
-jobs:
-  include:
-   - dist: xenial
-     arch: ppc64le
-     group: edge
-     language: python
-     python: '3.7'
-     script:
-      - ant -version
-   - dist: xenial
-     arch: s390x
-     group: edge
-     script:
-      - ant -version
-
-
+arch: arm64-graviton2
+script:
+  - date
